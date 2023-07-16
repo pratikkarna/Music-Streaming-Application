@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'SIFIFontRegular';
+    src: url('path-to-your-font/SIFIFont-Regular.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'SIFIFontBold';
+    src: url('path-to-your-font/SIFIFont-Bold.ttf') format('truetype');
+  }
+body, h1, h2, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'SIFIFontRegular', Arial, sans-serif;
+    background: url('https://images.pexels.com/photos/3721941/pexels-photo-3721941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover fixed no-repeat;
+font-size:15px;
+    color:rgb(254, 254, 254);
+  }
+  
+
+  header {
+    background-color: #000000;
+    color: rgb(79, 78, 78);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-family: 'SIFIFontBold';
+    font-size: 40px;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  #playlist {
+    font-style: italic;
+    flex: 1;
+  }
+  
+  #playlist h2 {
+    font-size: 20px;
+    margin-bottom: 100px;
+  }
+  
+  #playlist ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #playlist li {
+    color: rgb(96, 96, 96);
+    margin-bottom: 5px;
+  }
+  
+  #player { 
+    flex: 1;
+  }
+  
+  #player h2 {
+    color: rgb(177, 177, 177);
+    font-style: italic;
+    font-size: 25px;
+    margin-top: 250px;
+    margin-bottom: 10px;
+  }
+  
+  #current-song {
+    font-style: italic;
+    color:rgb(194, 85, 1);
+    font-family: 'SIFIFontRegular';
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  #controls button {
+    margin-right: 10px;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #controls button:hover {
+    background-color: #555;
+  }
+  
+  
+  #file-input {
+    margin-top: 10px;
+  }
+  
+
+  #progress-bar {
+    height: 5px;
+    background-color: #ffffff;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  
+    #playlist {
+      margin-bottom: 20px;
+    }
+
+    
+  }
